@@ -2,7 +2,7 @@ let idade = prompt ("Digite sua idade");
 
 if(idade < 18) {
     
-    alert("Infelizmente você não pode jogar por ser menor");
+    alert("Infelizmente você não pode jogar por ser menor.");
 } if(idade >= 18){
     alert("Vamos começar");
 
