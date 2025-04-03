@@ -1,7 +1,7 @@
-let rodada = 1;
-while(rodada <=3 ){
+let ganhou = 0; // Se for 1, perdeu, se for 0, ganhou.
 
-    console.log("Rodada: " + rodada);
+for(let rodada = 1; rodada <= 3; rodada++){
+
     let escolhaJogador = prompt("Nível " + rodada + ", escolha entre (1,2 ou 3):");
     let pisoQuebrado = Math.floor(Math.random() * 3) + 1;
 
@@ -9,13 +9,12 @@ while(rodada <=3 ){
 
         alert("O vidro quebrou.");
         rodada = 1000;
+        ganhou = 1;
     }else {
         alert("Parabéns, o piso quebrado estava no " + pisoQuebrado + ".");
     }
-    rodada = rodada + 1;
 }
-
-if (rodada == 4 ) {
+if (ganhou == 0) {
 
     alert("Você venceu, parabéns!");
 }
